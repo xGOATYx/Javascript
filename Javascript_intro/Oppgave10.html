@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mynt eller Kron</title>
+    </head>
+    <body>
+        <img id="myntKron" width="200">
+        <script>
+            let tilfeldig = Math.random();
+            let bilde = document.getElementById("myntKron");
+            if (tilfeldig < 0.5) {
+                bilde.src = "kron.jpg";
+            } else {
+                bilde.src = "mynt.jpg";
+            }
+        </script>
+    </body>
