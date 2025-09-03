@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oppgave 9</title>
+    </head>
+    <body>
+        <script>
+            let score = 0;
+
+            let svar1 = prompt("Spørsmål 1: Hvem er hovedpersonen i Harry Potter?");
+            if (svar1 === "Harry Potter") {
+                alert("Riktig!");
+                score += 2;
+            } else {
+                alert("Feil. Riktig svar er Harry Potter.");
+            }
+            
+            let svar2 = prompt("Spørsmål 2: Hvilken skole går han på?");
+            if (svar2 === "Galtvort") {
+                alert("Riktig!");
+                score += 2;
+            } else {
+                alert("Feil. Riktig svar er Galtvort.");
+            }
+
+            let svar3 = prompt("Spørsmål 3: Hvilket dyr har Hermine?");
+            if (svar3 === "Katt") {
+                alert("Riktig!");
+                score += 2;
+            } else {
+                alert("Feil. Riktig svar er Katt.");
+            }
+
+            let svar4 = prompt("Spørsmål 4: Hvem er professor i trylleformler?");
+            if (svar4 === "Professor Flitwick") {
+                alert("Riktig!");
+                score += 2;
+            } else {
+                alert("Feil. Riktig svar er Professor Flitwick.");
+            }
+
+            let svar5 = prompt("Spørsmål 5: Hva heter den mørke trollmannen?");
+            if (svar5 === "Voldemort") {
+                alert("Riktig!");
+                score += 2;
+            } else {
+                alert("Feil. Riktig svar er Voldemort.");
+            }
+
+            document.write("Du fikk " + score + " poeng. <br>Takk for deltakelsen!");
+        </script>
+    </body>
+</html>

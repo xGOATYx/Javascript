@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oppgave 10</title>
+    </head>
+    <body>
+        <script>
+            document.write("<table border='1'>");
+            document.write("<tr><th>Tall</th><th>Andre potens</th><th>Tredje potens</th></tr>");
+            for (let i = 0; i <= 1000; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                document.write("<td>" + (i * i) + "</td>");
+                document.write("<td>" + (i * i * i) + "</td>");
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</html>
