@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 3</title>
+    </head>
+    <body>
+        <h1>Klikk riktig knapp!</h1>
+        <div id="conteiner"></div>
+
+        <script>
+          const conteiner = document.getElementById("conteiner");
+          const riktig = Math.floor(Math.random() * 5);
+
+          for (let i = 0; i < 5; i++) {
+            const btn = document.createElement("button");
+            btn.textContent = "Klikk meg";
+            btn.onclick = () => {
+              if (i === riktig) {
+                alert("Riktig!");
+              } else {
+                alert("Feil, prøv igjen");
+              }
+            };
+            conteiner.appendChild(btn);
+          }
+        </script>
+    </body>
+</html>

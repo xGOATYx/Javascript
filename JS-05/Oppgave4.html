@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 4</title>
+    </head>
+    <body>
+        <script>
+            function tabellRad(fornavn, etternavn, alder) {
+                return `
+                <tr>
+                    <td>${fornavn}</td>
+                    <td>${etternavn}</td>
+                    <td>${alder}</td>
+                </tr>`;
+            }
+
+            document.write(`
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Fornavn</th>
+                    <th>Etternavn</th>
+                    <th>Alder</th>
+                </tr>
+                ${tabellRad('Greta', 'Thunberg', 21)}
+                ${tabellRad('Ola', 'Nordman', 22)}
+                ${tabellRad('Jenna', 'Ortega', 22)}
+                ${tabellRad('Dua', 'Lipa', 29)}
+            </table>
+            `);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 2</title>
+    </head>
+    <body>
+        <script>
+            function lagHilsen(navn) {
+                return `Hei, ${navn}! Hyggelig å se deg.<br>`;
+            }
+
+            for (let i = 1; i <= 3; i++) {
+                let navn = prompt(`Hva heter du? (person ${i})`);
+                document.write(lagHilsen(navn));
+            }
+        </script>
+    </body>
+</html>

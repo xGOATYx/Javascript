@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 5</title>
+    </head>
+    <body>
+        <script>
+            function hilsen(navn, alder) {
+                let fødselsår = 2025 - alder;
+                return `HEI ${navn.toUpperCase()}! DU ER FØDT I ${fødselsår}.`;
+            }
+
+            let navn = prompt("Hva heter du?");
+            let alder = Number(prompt("Hvor gammel er du?"));
+
+            document.write(hilsen(navn, alder));
+        </script>
+    </body>
+</html>

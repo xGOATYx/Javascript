@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 3</title>
+    </head>
+    <body>
+        <script>
+            function infoLand(land, innbyggere) {
+                return `${land} har ${innbyggere} millioner innbyggere.`;
+            }
+
+            const LandData = {
+                "Norge": 5,
+                "Sverige": 10,
+                "Danmark": 6,
+                "Finland": 5.5
+            };
+
+            let valg = prompt("Hilket land vil du vite antall innbyggere i?");
+
+            if (valg in LandData) {
+                document.write(infoLand(valg, LandData[valg]));
+            } else {
+                document.write(`Beklager, jeg har ikke data om ${valg}.`);
+            }
+        </script>
+    </body>
+</html>

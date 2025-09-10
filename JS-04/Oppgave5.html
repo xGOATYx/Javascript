@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 5</title>
+    </head>
+    <body>
+        <button onclick="kastTerning()">Kast terning</button>
+        <p id="resultat"></p>
+
+        <script>
+            function terning() {
+                return Math.floor(Math.random() * 6) + 1;
+            }
+
+            function terningEmoji(tall) {
+                const terninger = ["\u2680", "\u2681", "\u2682", "\u2683", "\u2684", "\u2685"];
+                return terninger[tall - 1];
+            }
+
+            function kastTerning() {
+                let resultat = terning();
+                document.getElementById("resultat").innerHTML = "Du kastet en terning og fikk " + resultat + " " + terningEmoji(resultat);
+            }
+        </script>
+    </body>
+</html>
